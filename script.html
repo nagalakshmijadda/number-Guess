@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number Game</title>
+  <link rel="stylesheet" href="script.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Guess the Number Game</h1>
+    <label for="difficulty">Select Difficulty:</label>
+    <select id="difficulty">
+      <option value="50">Easy (1 to 50)</option>
+      <option value="100">Medium (1 to 100)</option>
+      <option value="500">Hard (1 to 500)</option>
+    </select>
+    <button id="start-button">Start Game</button>
+    
+    <div id="game" style="display: none;">
+      <p id="message">Guess the number between 1 and <span id="range"></span></p>
+      <input type="number" id="guess" placeholder="Enter your guess" />
+      <button id="submit-guess">Submit Guess</button>
+      <p id="hint"></p>
+      <p id="attempts">Attempts: 0</p>
+      <p id="guess-history">Your guesses: </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
